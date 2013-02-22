@@ -1,1 +1,4 @@
-Audio environment simulator for testing source localisation algorithms.
+audio-sim: Audio environment simulator for testing source localisation algorithms.
+
+To run audio-sim, insert the following to the command line:
+ant run
