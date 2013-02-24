@@ -13,6 +13,8 @@ public class Demo {
 		room.insertMicrophone(new Microphone(1,3));
 		room.insertMicrophone(new Microphone(10,10));
 		room.insertMicrophone(new Microphone(2,5));
+		room.insertMicrophone(3,5);
+		room.insertMicrophone(10,10);
 		room.insertSource(new Source(7,7));
 		
 		ArrayList<Double> distances = room.getDistances();
