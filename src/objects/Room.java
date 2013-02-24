@@ -7,7 +7,7 @@ public class Room {
 	private double sizex = 0;
 	private double sizey = 0;
 	private ArrayList<Microphone> mics = new ArrayList<Microphone>();
-	private Source src = new Source(0,0);
+	private Source src;
 	
 	/**
 	 * 
@@ -49,8 +49,7 @@ public class Room {
 	}
 	public boolean insertSource(Source _src) {
 		if(this.contains(_src.posx, _src.posy)) {
-			src.posx = _src.posx;
-			src.posy = _src.posy;
+			src = _src;
 			return true;
 		}
 		return false;

@@ -15,7 +15,11 @@ public class Demo {
 		room.insertMicrophone(new Microphone(2,5));
 		room.insertMicrophone(3,5);
 		room.insertMicrophone(10,10);
-		room.insertSource(new Source(7,7));
+		
+		Source src = new Source(7,7);
+		room.insertSource(src);
+		src.play();
+		byte[] unused = src.getData();
 		
 		ArrayList<Double> distances = room.getDistances();
 		for(double dist : distances) {
