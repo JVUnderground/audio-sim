@@ -5,3 +5,7 @@ ant compile jar run
 
 Or directly, if already compiled:
 ant run
+
+To programmers - 
+Please clean up directory beforing pushing to remote repository via:
+ant clean
